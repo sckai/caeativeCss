@@ -35,6 +35,5 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  // border: 28px solid #4d4d4d;
 }
 </style>
