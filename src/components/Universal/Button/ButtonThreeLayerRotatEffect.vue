@@ -1,0 +1,54 @@
+<template>
+  <div id="ButtonThreeLayerRotatEffect">
+    <a href="#">Button</a>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+#ButtonThreeLayerRotatEffect {
+  & a {
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  & a:before {
+    content: 'Button';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2ce771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+  }
+  & a:hover:before, & a:hover:after {
+    transform: rotate(0deg);
+  }
+  & a:after {
+    content: 'Button';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+  }
+}
+</style>
