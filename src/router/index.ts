@@ -24,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/WavyCirclesView',
     name: 'WavyCirclesView',
     component: () => import('@/views/WavyCirclesView.vue')
+  },
+  {
+    path: '/ScrollingTextView',
+    name: 'ScrollingTextView',
+    component: () => import('@/views/ScrollingTextView.vue')
   }
 ]
 
