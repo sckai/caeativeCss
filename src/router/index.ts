@@ -19,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/HexagonView',
     name: 'HexagonView',
     component: () => import('@/views/HexagonView.vue')
+  },
+  {
+    path: '/WavyCirclesView',
+    name: 'WavyCirclesView',
+    component: () => import('@/views/WavyCirclesView.vue')
   }
 ]
 
