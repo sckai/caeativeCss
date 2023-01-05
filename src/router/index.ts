@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/ScrollingTextView',
     name: 'ScrollingTextView',
     component: () => import('@/views/ScrollingTextView.vue')
+  },
+  {
+    path: '/RainView',
+    name: 'RainView',
+    component: () => import('@/views/RainView.vue')
   }
 ]
 
