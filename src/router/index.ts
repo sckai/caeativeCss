@@ -34,6 +34,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/RainView',
     name: 'RainView',
     component: () => import('@/views/RainView.vue')
+  },
+  {
+    path: '/CubeView',
+    name: 'CubeView',
+    component: () => import('@/views/CubeView.vue')
   }
 ]
 
